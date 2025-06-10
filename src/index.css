@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Dangrek&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+.font-text{
+    font-family: "Roboto Condensed", sans-serif !important;
+}
+
+@plugin "daisyui"{
+    themes: light --default;
+}
+
+.bg-img{
+    background-image: url("./assets/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
