@@ -10,8 +10,15 @@
     themes: light --default;
 }
 
-.bg-img{
-    background-image: url("./assets/hero.png");
+.bg-img,
+.bg-img-2{
+    background-image: url("./assets/images/banner2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.bg-img-2{
+    background: center no-repeat;
+    background-image: url("./assets/images/banner4.png");
+    background-attachment: fixed;
 }

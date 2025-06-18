@@ -71,11 +71,12 @@ function Header() {
         <div className="flex justify-between items-center w-1/2">
           {/* logo */}
           <div className="flex items-center">
-            <div className="w-14 h-14 bg-green-300 me-1">
-              <img src="./assets/logo.png" alt="" />
+            <div className="w-12 h-12 me-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="" />
             </div>
             <p className="text-3xl font-bold">Store</p>
           </div>
+
 
           {/* menu */}
           <div className="space-x-4 text-white">
@@ -117,7 +118,7 @@ function Header() {
           </NavLink>
         </div>
         <button
-          className="block lg:hidden"
+          className="block lg:hidden w-full ms-55"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
@@ -130,11 +131,11 @@ function Header() {
         <div
           className={`${
             menuOpen
-              ? "opacity-100 translate-y-16 pointer-events-auto"
-              : "opacity-0 -tracking-y-14 pointer-events-none"
+              ? "opacity-100 translate-y-16 pointer-events-auto z-10"
+              : "opacity-0 -tracking-y-14 pointer-events-none z-10"
           } w-[90%] lg:hidden absolute translate-y-16 left-1/2 transform -translate-x-1/2 p-4 border bg-blue-200 rounded-box pb-10 `}
         >
-          <ul className="">
+          <ul className="z-10">
             {menuItems.map((item, index) => (
               <li
                 key={index}

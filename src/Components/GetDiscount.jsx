@@ -1,4 +1,8 @@
 import React from "react";
+import iphonePink from "../assets/product/ipink.png";
+import headPhone from "../assets/product/heandphone.png";
+import macBook from "../assets/product/mac.png";
+import iWatch from "../assets/product/watch.png";
 
 function GetDiscount() {
   return (
@@ -7,7 +11,7 @@ function GetDiscount() {
         <h1 className="text-3xl font-bold ">Get up ot 50% off</h1>
 
         <div className="flex flex-wrap justify-between mt-4">
-          <div className="my-3 sm:w-[49%] lg:w-[24%] bg-yellow-100 rounded-xl overflow-hidden">
+          <div className="my-3 w-full md:w-[48.5%] lg:w-[24%] bg-yellow-100 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
             <div className="p-8">
               <p className="text-3xl font-bold mb-3">Save</p>
               <p className="text-5xl font-bold text-yellow-400">
@@ -15,62 +19,62 @@ function GetDiscount() {
               </p>
               <p className="text-xl mt-3">Explore Our Furnishing Range</p>
             </div>
-            <div className="bg-yellow-400 w-full h-[260px] overflow-hidden">
+            <div className="bg-yellow-400 w-full h-[260px] overflow-hidden justify-items-center content-center">
               <img
-                src="https://img-prd-pim.poorvika.com/product/apple-iphone-14-yellow-512gb-top-view.png"
+                src={iWatch}
+                alt=""
+                className=" h-[90%] object-cover hover:scale-110 duration-300 cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <div className="my-3 w-full md:w-[48.5%] lg:w-[24%] bg-pink-100 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-duration="1500">
+            <div className="p-8">
+              <p className="text-3xl font-bold mb-3">Save</p>
+              <p className="text-5xl font-bold text-pink-400">
+                <sup>$</sup>100
+              </p>
+              <p className="text-xl mt-3">Explore Our Furnishing Range</p>
+            </div>
+            <div className="bg-pink-400 w-full h-[260px] overflow-hidden justify-items-center content-center">
+              <img
+                src={iphonePink}
                 alt=""
                 className="w-full h-full object-cover hover:scale-110 duration-300 cursor-pointer"
               />
             </div>
           </div>
 
-          <div className="my-3 sm:w-[49%] lg:w-[24%] bg-yellow-100 rounded-xl overflow-hidden">
+          <div className="my-3 w-full md:w-[48.5%] lg:w-[24%] bg-purple-100 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
             <div className="p-8">
               <p className="text-3xl font-bold mb-3">Save</p>
-              <p className="text-5xl font-bold text-yellow-400">
+              <p className="text-5xl font-bold text-purple-400">
                 <sup>$</sup>100
               </p>
               <p className="text-xl mt-3">Explore Our Furnishing Range</p>
             </div>
-            <div className="bg-yellow-400 w-full h-[260px] overflow-hidden">
+            <div className="bg-purple-400 w-full h-[260px] overflow-hidden justify-items-center content-center">
               <img
-                src="https://img-prd-pim.poorvika.com/product/apple-iphone-14-yellow-512gb-top-view.png"
+                src={headPhone}
                 alt=""
-                className="w-full h-full object-cover hover:scale-110 duration-300 cursor-pointer"
+                className="h-[90%] object-cover hover:scale-110 duration-300 cursor-pointer"
               />
             </div>
           </div>
 
-          <div className="my-3 sm:w-[49%] lg:w-[24%] bg-yellow-100 rounded-xl overflow-hidden">
+          <div className="my-3 w-full md:w-[48.5%] lg:w-[24%] bg-blue-100 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-duration="2500">
             <div className="p-8">
               <p className="text-3xl font-bold mb-3">Save</p>
-              <p className="text-5xl font-bold text-yellow-400">
+              <p className="text-5xl font-bold text-blue-400">
                 <sup>$</sup>100
               </p>
               <p className="text-xl mt-3">Explore Our Furnishing Range</p>
             </div>
-            <div className="bg-yellow-400 w-full h-[260px] overflow-hidden">
+            <div className="bg-blue-400 w-full h-[260px] overflow-hidden justify-items-center content-center">
               <img
-                src="https://img-prd-pim.poorvika.com/product/apple-iphone-14-yellow-512gb-top-view.png"
+                src={macBook}
                 alt=""
-                className="w-full h-full object-cover hover:scale-110 duration-300 cursor-pointer"
-              />
-            </div>
-          </div>
-
-          <div className="my-3 sm:w-[49%] lg:w-[24%] bg-yellow-100 rounded-xl overflow-hidden">
-            <div className="p-8">
-              <p className="text-3xl font-bold mb-3">Save</p>
-              <p className="text-5xl font-bold text-yellow-400">
-                <sup>$</sup>100
-              </p>
-              <p className="text-xl mt-3">Explore Our Furnishing Range</p>
-            </div>
-            <div className="bg-yellow-400 w-full h-[260px] overflow-hidden">
-              <img
-                src="https://img-prd-pim.poorvika.com/product/apple-iphone-14-yellow-512gb-top-view.png"
-                alt=""
-                className="w-full h-full object-cover hover:scale-110 duration-300 cursor-pointer"
+                className="h-76%] object-cover hover:scale-110 duration-300 cursor-pointer"
               />
             </div>
           </div>

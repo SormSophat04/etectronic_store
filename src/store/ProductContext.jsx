@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import Aos from "aos";
 
 const ProductContext = createContext();
 
@@ -12,7 +13,7 @@ export const ProductProvider = ({ children }) => {
     const fetchApi = async () => {
       try {
         const res = await axios.get(
-          "https://product-server-json.onrender.com/products"
+          "https://apple-product-api-fdjw.onrender.com"
         );
         console.table(res.data);
         setItems(res.data);
@@ -25,6 +26,9 @@ export const ProductProvider = ({ children }) => {
     fetchApi();
   }, []);
 
+  useEffect(()=>{
+    Aos.init({});
+  })
 
   return (
     <ProductContext.Provider value={{ items, isLoading }}>

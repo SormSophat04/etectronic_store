@@ -10,7 +10,7 @@ const BestDealProduct = () => {
   return (
     <div className="w-full mt-3 lg:mt-14">
       <div className={"container px-4 lg:px-30 mx-auto"}>
-        <h1 className={"text-3xl font-bold mt-5"}>Today Best Deals for You!</h1>
+        <h1 className={"text-3xl font-bold mt-16"}>Today Best Deals for You!</h1>
         <div className={"overflow-x-auto mb-5"}>
           <div className={"flex flex-nowrap gap-5"}>
             {isLoading ? (
@@ -34,9 +34,9 @@ const BestDealProduct = () => {
             ) : (
               items.map((v, i) => {
                 return (
-                  <div key={i} className="w-[149%] md:w-[32%] shrink-0 mt-5">
-                    <div className="w-full h-[358px] rounded-lg overflow-hidden relative border border-gray-300">
-                      <div className="btn btn-circle absolute end-3 top-3 bg-gray-100">
+                  <div key={i} className="w-[100%] md:w-[31.5%] lg:w-[32%] shrink-0 mt-10">
+                    <div className="w-full h-[358px] md:h-[240px] lg:h-[358px] rounded-2xl overflow-hidden relative bg-gray-100 justify-items-center content-center " data-aos="zoom-in" data-aos-duration="2000">
+                      <div className="btn btn-circle absolute end-3 top-3 bg-white">
                         <button>
                           <IoMdHeartEmpty className="text-2xl" />
                         </button>
@@ -49,17 +49,17 @@ const BestDealProduct = () => {
                           {v.name}
                         </p>
                         <p className="line-clamp-2 my-2 text-gray-600">
-                          {v.description}
+                          {v.des}
                         </p>
-                        <p className="text-yellow-400 text-xl flex">
-                          rating {v.rating} <IoMdStar className="text-2xl" />{" "}
+                        <p className=" text-xl flex">
+                         {v.rate} <IoMdStar className="text-2xl text-yellow-300" />
                         </p>
                         <button className="px-10 py-2 rounded-3xl cursor-pointer border text-black border-blue-500 hover:bg-blue-400 hover:text-white duration-300 mt-3">
                           Add Cart
                         </button>
                       </div>
                       <div>
-                        <p className="text-xl font-bold">${v.price}</p>
+                        <p className="text-xl font-bold">${v.price}<sup>.00</sup></p>
                       </div>
                     </div>
                   </div>
