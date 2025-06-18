@@ -10,7 +10,7 @@ const categories = [
   },
   {
     title: "Smart Watch",
-    image: "https://i.pinimg.com/736x/b7/17/f8/b717f863d02816035022ce2276a927cb.jpg",
+    image: "https://i.pinimg.com/736x/b1/30/28/b13028a5a0fd2ccc7ec69859eaf98a04.jpg",
   },
   {
     title: "Tablet",
@@ -19,6 +19,10 @@ const categories = [
   {
     title: "Headphones",
     image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072230.jpg?semt=ais_hybrid&w=740",
+  },
+  {
+    title: "Airpod",
+    image: "https://i.pinimg.com/736x/3b/55/9f/3b559fafd9cf32a9064e5f1104cdf11d.jpg",
   },
 ];
 

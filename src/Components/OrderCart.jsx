@@ -9,7 +9,7 @@ function OrderCart() {
         <div className="flex flex-wrap lg:justify-between gap-2 mt-10" data-aos="fade-up" data-aos-duration="2500">
           {categories.map((item) => {
             return (
-              <div key={item.id} className="w-[48.5%] md:w-[32.5%] lg:w-[18%] h-[230px] bg-blue-50 rounded-xl overflow-hidden relative">
+              <div key={item.id} className="w-[48.5%] md:w-[32.5%] lg:w-[16%] h-[230px] bg-blue-50 rounded-xl overflow-hidden relative">
                 <h1 className="absolute z-3 left-1/2 transform -translate-x-1/2 top-3 font-bold text-2xl text-white text-center w-full" >{item.title}</h1>
                 <img className=" object-cover hover:scale-110 duration-300 cursor-pointer" src={item.image} alt="" />
               </div>
